@@ -1,0 +1,301 @@
+/* COLORES
+#ec385c Color rojo
+#2e2e31 Color gris oscuro
+*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+}
+
+/* Header */
+header{
+    padding: 25px 0;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+    /* position: fixed;
+    z-index: 9999;
+    background-color: #ffffff; */
+}
+.nav-header {
+    display: flex;
+}
+.logo{
+    margin: 0;
+    margin-left: 45px;
+}
+.nav-menu {
+    display: flex;
+    margin: 20px;
+    list-style: none;
+    padding: 0;
+}
+.nav-item {
+    margin: 0 10px;
+}
+a {
+    text-decoration: none;
+    color: #2e2e31;
+    display: block;
+}
+a:hover {
+    color: #ec385c;
+}
+a:active{
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #3d2b2e;
+}
+.nav-link {
+    line-height: 2.5;
+    padding: 0 30px;
+}
+.boton {
+    background-color: #ec385c;
+    color: white;
+    border-radius: 100px;
+}
+.boton:hover{
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .nav-header {
+      display: none;
+    }
+  }
+  
+/* Estilos para el Hero */
+.hero {
+    background-image: url('./imagenes/hero_cc_1.png'); /* Cambia la URL a la de tu imagen */
+    background-position: center; /* Centra la imagen */
+    background-size: cover;
+    display: flex;
+    padding: 200px 0px;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.hero-contenido{
+    width: 100%;
+    padding: 50px ;
+    border-radius: 100px;
+    margin: 0px;
+}
+.saludo {
+    font-size: 30px;
+}
+.hero-titulo{
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.presentacion {
+    font-size: 25px;
+
+
+}
+.hero-boton {
+    width: 250px;
+    background-color: #ffffff; /* Color del botón */
+    color: #4e4e4e;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18.8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para Mi BIO */
+.mi-bio {
+    padding: 0px 30px 0px 30px;
+    margin: 0px;
+}
+/* ???? porque no puedo poner varios en la misma @ */
+@media (min-width: 1024px){
+    .mi-bio {
+        width: 700px;
+    }
+}
+@media (min-width: 1440px){
+    .mi-bio {
+        width: 1135px;
+    }
+}
+.mi-bio h1{
+    font-size: 30px;
+    text-align: center;
+}
+.mi-bio h2{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color:#ec385c;
+    text-align:center;
+}
+.mi-bio h3{
+    font-size: 15px;
+    color: #3d2b2e;
+}
+.mi-bio >p{
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #3d2b2e;
+    text-align: justify;
+}
+.destacado{
+    background: linear-gradient(166deg, rgba(46,46,49,1) 43%, rgba(255,255,255,1) 100%);
+    padding: 20px;
+}
+.destacado-texto{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+}
+#destacado-exclamacion {
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    align-items: center;
+}
+/* ??????Porque no se alinea */
+
+/* Estilos para Cuarto Colorado */
+.cuarto-colorado {
+    padding: 0px 30px 30px;
+}
+.cuarto-colorado h1{
+    font-size: 30px;
+    text-align: center;
+}
+.cuarto-colorado p{
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #3d2b2e;
+    text-align: justify;
+}
+@media (min-width: 1024px){
+    .cuarto-colorado {
+        width: 700px;
+    }
+}
+@media (min-width: 1440px){
+    .cuarto-colorado {
+        width: 1135px;
+        text-align: center;
+    }
+}
+.productos {
+    padding: 10px;
+    background-color: #bbbbbb63;
+
+}
+.productos h2{
+    font-size: 15px;
+    color: #3d2b2e;
+    text-align: center;
+}
+img{
+    margin: 20px;
+    width: 190px;
+}
+.grilla-productos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap; /* Le indica al contenedor si puede distribuir los elementos en más de una línea a medida que se va a achicando. */
+    width: 250px;
+}
+@media (min-width: 321px){
+    .grilla-productos{
+         width: 650px;
+    }
+ }
+@media (min-width: 770px){
+   .grilla-productos{
+        width: 600px;
+   }
+}
+@media (min-width: 1440px){
+    .grilla-productos{
+         width: 1000px;
+    }
+ }
+
+
+
+/* Estilos para ASIDE */
+.cronologia{
+    background-color: #fcfcfda4;
+    border-color: #3d2b2e solid;
+    position: fixed;
+    right: 0;
+    top: 0px;
+    width: 300px;
+    height: 100vh;
+    border-left: 5px solid #ffffff;
+    padding: 20px;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+@media (max-width:768px){
+    .cronologia {
+        display: none;
+    }
+}
+.cronologia h2 {
+    font-family: "Dosis", sans-serif;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    color: #4e4e4e;
+}
+.cronologia h3{
+    text-align: left;
+    font-size: 15px;
+    color: #ec385c;
+}
+.cronologia p {
+    font-size: 10px;
+    margin-bottom: 30px;
+    color: #3d2b2e;
+    text-align: left;
+}
+
+
+/* 
+estilos FORMULARIO
+form{
+    width: 100%;
+    background-color: #ec385c;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+
+form div{
+    margin-left: 20px;
+
+}
+form div label{
+    color: #ffffff;
+
+}
+
+form div #aceptar{
+ color: #ffffff;
+ background-color: #0b0b0b;
+} */
+
+
+
+
+
